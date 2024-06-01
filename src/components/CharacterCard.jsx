@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import '../assets/css/CharacterCard.css'; // Importa el archivo CSS para las cartas
+import '../assets/css/CharacterCard.css'; 
 
 const CharacterCard = ({ character }) => {
     return (

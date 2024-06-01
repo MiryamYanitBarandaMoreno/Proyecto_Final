@@ -33,3 +33,26 @@
       --gradient-end: #161616f7;
     }
   }
+
+  .container {
+    margin-top: 20px;
+  }
+  
+  header{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  footer{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .character-card img {
+    height: 12rem;
+    object-fit: cover;
+  }
+
+  .btn-reset {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }

@@ -8,9 +8,11 @@ const SearchBar = ({ values, handleInputChange, handleSearch }) => {
         id="searchCharacter"
         onChange={handleInputChange}
         type="text" 
-        value={values.searchCharacter} 
+        value={values.searchCharacter}
       />
-      <button onClick={handleSearch} className="btn btn-primary">Search</button>
+      <button onClick={handleSearch} className="btn btn-primary">
+      <img src="https://img.icons8.com/?size=100&id=112468&format=png&color=FFFFFF" alt="Search" style={{ width: '44px', height: '44px' }} />
+      </button>
     </div>
   );
 };
