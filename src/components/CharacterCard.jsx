@@ -1,18 +1,17 @@
 import PropTypes from 'prop-types';
+import '../assets/css/CharacterCard.css'; // Importa el archivo CSS para las cartas
 
-const CharacterCard = ({ characters }) => {
-    const cardStyle = { width: "18rem" };
-
+const CharacterCard = ({ character }) => {
     return (
-        <div className="card" style={cardStyle}>
+        <div className="card character-card">
             <div className="card-body">
-                <img src={characters.imageUrl} className="card-img-top" alt={`${characters.fullName}`} />
-                <h5 className="card-title">{characters.fullName}</h5>
+                <img src={character.imageUrl} className="card-img-top" alt={`${character.fullName}`} />
+                <h5 className="card-title">{character.fullName}</h5>
                 <p className="card-text">
-                    <strong>Title:</strong> {characters.title}
+                    <strong>Title:</strong> {character.title}
                 </p>
                 <p className="card-text">
-                    <strong>Family:</strong> {characters.family}
+                    <strong>Family:</strong> {character.family}
                 </p>
             </div>
         </div>
@@ -20,7 +19,7 @@ const CharacterCard = ({ characters }) => {
 };
 
 CharacterCard.propTypes = {
-    characters: PropTypes.shape({
+    character: PropTypes.shape({
         id: PropTypes.number.isRequired,
         firstName: PropTypes.string.isRequired,
         lastName: PropTypes.string.isRequired,

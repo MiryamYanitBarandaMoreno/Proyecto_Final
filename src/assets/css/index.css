@@ -1,4 +1,35 @@
-body{
-    background-image: linear-gradient(to right bottom, #3e76ec, #0099f6, #00b7f4, #65d0ee, #a5e6ec);
-    min-height: 100vh;
-}
+
+@property --gradient-start {
+    syntax: "<color>";
+    initial-value: transparent;
+    inherits: false;
+  }
+  
+  @property --gradient-end {
+    syntax: "<color>";
+    initial-value: transparent;
+    inherits: false;
+  }
+  
+  body {
+    --gradient-start: #ab20209f;
+    --gradient-end: #192556ad;
+  
+    animation: gradientAnimation 2s infinite alternate; /* 3 segundos y se repite */
+    background: linear-gradient(
+      to right,
+      var(--gradient-start),
+      var(--gradient-end)
+    );
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      --gradient-start: #682323;
+      --gradient-end: #1c2d6f;
+    }
+    100% {
+      --gradient-start: #6a6729;
+      --gradient-end: #161616f7;
+    }
+  }
