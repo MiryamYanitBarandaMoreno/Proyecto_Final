@@ -1,5 +1,6 @@
 const getCharacterById = async (id = '0') => {
-  const url = `https://thronesapi.com/api/v2/Characters/${id}`;
+  const link=import.meta.env.VITE_API_BASE_URL
+  const url = `${link}/Characters/${id}`;
   const response = await fetch(url);
   if (!response.ok) {
     return { error: 'Character not found' };
@@ -9,7 +10,8 @@ const getCharacterById = async (id = '0') => {
 };
 
 const getCharacters = async () => {
-  const url = `https://thronesapi.com/api/v2/Characters/`;
+  const link=import.meta.env.VITE_API_BASE_URL
+  const url = `${link}/Characters/`;
   const response = await fetch(url);
   const allCharacters = await response.json();
   return allCharacters;
