@@ -10,7 +10,7 @@ const SearchBar = ({ values, handleInputChange, handleSearch }) => {
         type="text" 
         value={values.searchCharacter}
       />
-      <button onClick={handleSearch} className="btn btn-primary">
+      <button onClick={handleSearch} className="btn-search">
       <img src="https://img.icons8.com/?size=100&id=112468&format=png&color=FFFFFF" alt="Search" style={{ width: '44px', height: '44px' }} />
       </button>
     </div>

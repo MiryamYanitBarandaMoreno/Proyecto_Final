@@ -1,5 +1,6 @@
+const link=import.meta.env.VITE_API_BASE_URL
+
 const getCharacterById = async (id = '0') => {
-  const link=import.meta.env.VITE_API_BASE_URL
   const url = `${link}/Characters/${id}`;
   const response = await fetch(url);
   if (!response.ok) {
@@ -10,7 +11,6 @@ const getCharacterById = async (id = '0') => {
 };
 
 const getCharacters = async () => {
-  const link=import.meta.env.VITE_API_BASE_URL
   const url = `${link}/Characters/`;
   const response = await fetch(url);
   const allCharacters = await response.json();

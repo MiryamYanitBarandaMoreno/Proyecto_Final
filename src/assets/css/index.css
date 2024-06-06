@@ -51,8 +51,46 @@
     object-fit: cover;
   }
 
-  .btn-reset {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-  }
+/* Existing styles */
+.btn-reset,
+.btn-search {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+}
+
+.btn-reset img,
+.btn-search img {
+  filter: brightness(0) invert(1);
+}
+
+.btn-reset:hover,
+.btn-search:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn-reset:focus,
+.btn-search:focus {
+  box-shadow: none;
+}
+
+.form-select,
+.page-link {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+}
+/* CSS para SearchBar */
+.input-group-text {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.form-control {
+  background-color: rgba(0, 0, 0, 0.7); /* Negro con transparencia */
+  color: white; /* Texto blanco */
+  border: none; /* Quitamos el borde */
+}
+
+.form-control:focus {
+  box-shadow: none; /* Quitamos el borde al enfocar */
+}
