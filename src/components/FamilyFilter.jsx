@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 const FamilyFilter = ({ families, selectedFamily, handleFilterChange }) => {
   return (
-    <div className="mb-4">
-      <label htmlFor="familyFilter" className="form-label text-white">Filter by Family:</label>
+    <div className="input-group custom-input-group">
+      <label htmlFor="familyFilter" className="input-group-text text-white">Filter by Family</label>
       <select 
         id="familyFilter" 
-        className="form-select" 
+        className="form-select text-white" 
         value={selectedFamily} 
         onChange={handleFilterChange}
       >

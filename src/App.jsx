@@ -84,29 +84,23 @@ function App() {
       <Header />
       <div className="container">
         <div>
-          <h2 className="my-4 text-white">Max Characters</h2>
+          <h2 className="my-4 text-white text-center">Max Characters</h2>
         </div>
-        <div className="row d-flex justify-content-center align-items-center">
-          <div className="col">
-            <SearchBar 
-              values={values}
-              handleInputChange={handleInputChange}
-              handleSearch={handleSearch}
-            />
-          </div>
-          <div className="col-auto mb-3">
-            <button onClick={handleReset} className="btn-reset">
-              <img src="https://img.icons8.com/?size=100&id=lmg98GxKpRDA&format=png&color=FFFFFF" alt="Reset" style={{ width: '44px', height: '44px' }} />
-            </button>
-          </div>
+        <div className="d-flex justify-content-center align-items-center gap-3 mb-4">
+          <SearchBar 
+            values={values}
+            handleInputChange={handleInputChange}
+            handleSearch={handleSearch}
+          />
+          <FamilyFilter 
+            families={allFamilies} 
+            selectedFamily={selectedFamily} 
+            handleFilterChange={handleFilterChange} 
+          />
+          <button onClick={handleReset} className="btn-reset d-flex align-items-center">
+            <img src="https://img.icons8.com/?size=100&id=lmg98GxKpRDA&format=png&color=FFFFFF" alt="Reset" style={{ width: '44px', height: '44px' }} />
+          </button>
         </div>
-        
-        <FamilyFilter 
-          families={allFamilies} 
-          selectedFamily={selectedFamily} 
-          handleFilterChange={handleFilterChange} 
-        />
-        
         <div className="row">
           <div className="col text-center"> 
             {loading ? <h2>Loading...</h2> :
@@ -122,7 +116,6 @@ function App() {
             }   
           </div>
         </div>
-        
         <Pagination 
           charactersPerPage={charactersPerPage} 
           totalCharacters={characters.length} 

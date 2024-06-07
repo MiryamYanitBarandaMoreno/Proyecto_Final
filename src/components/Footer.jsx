@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="text-white text-center py-4">
       <div className="container">
-        <h5>Trailer Oficial de House of de Dragon</h5>
+      <img src="src\assets\img\hotd1.png" alt="GOT" style={{ width: '70rem', height: '8rem' }}/>
         <p>Recuerden ver la segunda temporada el 16 de junio en Max</p>
         <div className="embed-responsive embed-responsive-16by9">
           <iframe 
