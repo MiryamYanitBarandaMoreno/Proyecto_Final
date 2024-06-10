@@ -17,6 +17,7 @@ const Header = () => {
           <div className="col">
             <img src="src\assets\img\Casa_Targaryen_estandarte.webp" alt="Imagen2" className="img-fluid" style={{ width: '12rem', height: '12rem' }} />
           </div>
+          <img src="src/assets/img/CHF.jpg" alt="Coleccion CHF" style={{ width: '100rem', height: '15rem' }} />
         </div>
       </div>
     </header>

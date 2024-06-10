@@ -22,43 +22,7 @@ body {
   margin-top: 20px;
 }
 
-header {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-footer {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.character-card img {@property --gradient-start {
-  syntax: "<color>";
-  initial-value: transparent;
-  inherits: false;
-}
-
-@property --gradient-end {
-  syntax: "<color>";
-  initial-value: transparent;
-  inherits: false;
-}
-
-body {
-  background-image: url("src/assets/img/fuego6.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  animation: gradientAnimation 2s infinite alternate;
-}
-
-.container {
-  margin-top: 20px;
-}
-
-header {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-footer {
+header, footer {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -68,26 +32,20 @@ footer {
 }
 
 .form-select,
-.page-link {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
+.page-link,
+.input-group-text,
+.form-control,
+.card {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: white !important;
   border: none;
 }
 
 .form-select:hover,
-.page-link:hover {
+.page-link:hover,
+.form-select:focus,
+.page-link:focus {
   background-color: rgba(128, 0, 0, 0.7);
-}
-
-.input-group-text,
-.form-control {
-  background-color: rgba(0, 0, 0, 0.7) !important;
-  color: white !important;
-}
-
-.card {
-  background-color: rgba(0, 0, 0, 0.7) !important;
-  color: white !important;
 }
 
 .card:hover {
@@ -96,16 +54,12 @@ footer {
   background-color: rgba(128, 0, 0, 0.7) !important;
 }
 
-  height: 12rem;
-  object-fit: cover;
-}
-
 .btn-reset,
 .btn-search {
   background-color: rgba(0, 0, 0, 0.7);
   border: none;
   padding: 8px;
-  height: 60px;
+  height: 44px;
   display: flex;
   align-items: center;
 }
@@ -117,7 +71,7 @@ footer {
 
 .btn-reset:hover,
 .btn-search:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(128, 0, 0, 0.7);
 }
 
 .btn-reset:focus,
@@ -125,37 +79,8 @@ footer {
   box-shadow: none;
 }
 
-.form-select,
-.page-link {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  border: none;
-}
-
-.form-select:hover,
-.page-link:hover {
-  background-color: rgba(128, 0, 0, 0.7);
-}
-
-.input-group-text,
-.form-control {
-  background-color: rgba(0, 0, 0, 0.7) !important;
-  color: white !important;
-}
-
-.card {
-  background-color: rgba(0, 0, 0, 0.7) !important;
-  color: white !important;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s;
-  background-color: rgba(128, 0, 0, 0.7) !important;
-}
-
 .custom-input-group {
-  height: 60px;
+  height: 44px;
   flex: 1;
 }
 
